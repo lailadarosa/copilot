@@ -5,18 +5,28 @@
     <style>
         body {
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 100vh;
             background: #000;
+            color: #fff;
+            font-family: Arial, sans-serif;
         }
         #game {
             background: #fff;
+            margin-bottom: 20px;
+        }
+        #score {
+            font-size: 24px;
+            font-weight: bold;
         }
     </style>
 </head>
 <body>
     <canvas id="game" width="512" height="512"></canvas>
+    <!-- Display the score -->
+    <div id="score"></div>
     <!-- Include the JavaScript file here -->
     <script src="snake.js"></script>
 </body>
